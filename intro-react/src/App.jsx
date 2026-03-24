@@ -5,6 +5,7 @@ import Producto from './Producto';
 import Button from 'react-bootstrap/Button';
 import Contador from './Contador';
 import Input from './Input';
+import Revervas from './Reservas';
 
 
 
@@ -19,7 +20,8 @@ function App() {
 
     <>
 
-    <Input />
+    <Revervas />
+    {/* <Input /> */}
     {/* <Contador /> */}
 
       {/* <h1 style={classObj}>{productName}</h1>
