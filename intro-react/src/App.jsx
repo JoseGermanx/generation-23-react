@@ -7,6 +7,7 @@ import Contador from './Contador';
 import Input from './Input';
 import Revervas from './Reservas';
 import Got from './Got';
+import ListaUsuarios from './ListaUsuarios';
 
 
 
@@ -20,7 +21,8 @@ function App() {
   return (
 
     <>
-    <Got />
+    <ListaUsuarios />
+    {/* <Got /> */}
     {/* <Revervas /> */}
     {/* <Input /> */}
     {/* <Contador /> */}
