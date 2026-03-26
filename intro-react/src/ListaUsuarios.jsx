@@ -8,18 +8,23 @@ const ListaUsuarios = () => {
 
     useEffect(()=> {
 
+        const controller = new AbortController()
+        
         const getUsuarios = async () => {
             try {
                 const response = await fetch("https://jsonplaceholder.typicode.com/users")
                 const data = await response.json()
                 setUsuarios(data)
-                console.log(data)
                 
             } catch (error) {
                 console.log(error)
             }
         }
         getUsuarios()
+
+
+        // limpieza del fetch
+        return () => controller.abort()
 
     }, [])
 
