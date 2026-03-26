@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import Contador from './Contador';
 import Input from './Input';
 import Revervas from './Reservas';
+import Got from './Got';
 
 
 
@@ -19,8 +20,8 @@ function App() {
   return (
 
     <>
-
-    <Revervas />
+    <Got />
+    {/* <Revervas /> */}
     {/* <Input /> */}
     {/* <Contador /> */}
 
